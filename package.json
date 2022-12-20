@@ -1,0 +1,37 @@
+{
+  "name": "radium",
+  "version": "1.0.0",
+  "description": "repository for backend cohort - Radium",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabihak89/radium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabihak89/radium/issues"
+  },
+  "homepage": "https://github.com/sabihak89/radium#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "isodate": "^0.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15",
+    "trim-body": "^0.0.4",
+    "trim-request": "^1.0.6",
+    "trim-request-body": "^1.0.1",
+    "underscore": "^1.13.2"
+  }
+}
