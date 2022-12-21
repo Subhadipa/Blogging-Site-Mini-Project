@@ -1,38 +1,39 @@
 const mongoose = require('mongoose')
+
 const authorSchema = new mongoose.Schema(
       {
 
             fname:
             {
                   type: String,
-                  trim:true,
+                  trim: true,
                   required: true
             },
             lname:
             {
                   type: String,
-                  trim:true,
+                  trim: true,
                   required: true
             },
             title:
             {
                   type: String,
                   enum: ["Mr", "Mrs", "Miss"],
-                  trim:true,
-                   required: true
+                  trim: true,
+                  required: true
             },
 
             email:
             {
                   type: String,
-                  trim:true,
+                  trim: true,
                   required: true,
                   unique: true
             },
             password:
             {
                   type: String,
-                  trim:true,
+                  trim: true,
                   required: true
 
             }
@@ -43,4 +44,4 @@ const authorSchema = new mongoose.Schema(
 
 )
 
-module.exports = mongoose.model('authorModel_Final', authorSchema)
+module.exports = mongoose.model('Author Model', authorSchema)
