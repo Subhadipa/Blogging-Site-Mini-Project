@@ -1,7 +1,6 @@
 const blogModel = require("../models/blogModel")
 const authorModel = require("../models/authorModel")
 const validation = require("../middleware/validation")
-//const mongoose = require('mongoose')
 let exportFuncs = {
     //------------------------1.Create Blog---------------------------------------------------------
     createBlog: async (req, res) => {
@@ -82,8 +81,6 @@ let exportFuncs = {
             if (!validation.isValidString(tags)) {
                 return res.status(400).send({ status: false, message: "tags cannot be empty while fetching." });
             }
-            // console.log(tags)
-            // console.log(subcategory)
 
             if (!validation.isValidString(subcategory)) {
                 return res.status(400).send({

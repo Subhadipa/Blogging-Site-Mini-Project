@@ -91,4 +91,4 @@ let exportFuncs = {
 
     }
 }
-
+module.exports = exportFuncs
