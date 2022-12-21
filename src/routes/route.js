@@ -6,19 +6,19 @@ const blogController = require("../controllers/blogController")
 const middleWare = require("../middleware/authentication")
 const Token = middleWare.tokenCheck
 
-router.post('/authors',  authorController.createAuthor);
+router.post('/createAuthors', authorController.createAuthor);
 
 router.post('/login', authorController.loginAuthor)
 
-router.post('/blogs', Token, blogController.createBlog);
+router.post('/createBlogs', Token, blogController.createBlog);
 
-router.get('/blogs', Token, blogController.getFilterBlog);
+router.get('/filterBlogs', Token, blogController.getFilterBlog);
 
-router.put('/blogs/:blogId', Token, blogController.updateBlog);
+router.put('/updateBlogs/:blogId', Token, blogController.updateBlog);
 
-router.delete('/blogs/:blogId', Token, blogController.deleteBlogbyId);
+router.delete('/deleteBlogbyId/:blogId', Token, blogController.deleteBlogbyId);
 
-router.delete('/blogs', Token, blogController.deleteBlog)
+router.delete('/deleteBlog', Token, blogController.deleteBlog)
 
 
 

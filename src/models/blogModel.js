@@ -6,19 +6,19 @@ const blogSchema = new mongoose.Schema(
                 "title":
                 {
                         type: String,
-                        trim:true,
+                        trim: true,
                         required: true
                 },
                 "body":
                 {
                         type: String,
-                        trim:true,
+                        trim: true,
                         required: true
                 },
                 "authorId":
                 {
                         type: ObjectId,
-                        ref: 'authorModel_Final',
+                        ref: 'Author Model',
                         required: true
                 },
 
@@ -26,7 +26,7 @@ const blogSchema = new mongoose.Schema(
                 "category":
                 {
                         type: String,
-                        trim:true,
+                        trim: true,
                         required: true
                 },
                 "subcategory": [String],
@@ -34,7 +34,7 @@ const blogSchema = new mongoose.Schema(
                 "isDeleted":
                 {
                         type: Boolean,
-                        trim:true,
+                        trim: true,
                         default: false
 
                 },
@@ -43,7 +43,7 @@ const blogSchema = new mongoose.Schema(
                 "isPublished":
                 {
                         type: Boolean,
-                        trim:true,
+                        trim: true,
                         default: false
 
                 }
@@ -57,4 +57,4 @@ const blogSchema = new mongoose.Schema(
 
 )
 
-module.exports = mongoose.model('blogModel_Final', blogSchema)
+module.exports = mongoose.model('Blog Model', blogSchema)
