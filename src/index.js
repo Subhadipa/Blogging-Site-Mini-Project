@@ -1,11 +1,15 @@
 const express = require('express');
 var bodyParser = require('body-parser');
-
+const cors=require("cors")
 const route = require('./routes/route.js');
 const _ = require('underscore');
+
 const app = express();
 
+const multer=require("multer")//receive data from form data
+app.use(multer().any())
 
+app.use(cors())//avoid cors error
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
